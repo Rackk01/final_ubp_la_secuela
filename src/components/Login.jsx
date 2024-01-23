@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// import '../components/css/Login.css';
+import './css/Login.css';
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -15,11 +15,10 @@ const Login = () => {
 
   return (
     <div className="login-container">
-      <h1>Inicia Sesión</h1>
       <form className="login-form" onSubmit={handleLogin}>
-        <h2>Iniciar Sesión</h2>
+        <h2 className="titulo">Iniciar Sesión</h2>
         <input
-          type="text"
+          type="email"
           placeholder="Correo electronico"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
@@ -31,8 +30,19 @@ const Login = () => {
           onChange={(e) => setPassword(e.target.value)}
         />
         <button type="submit">Iniciar Sesión</button>
-      </form>
+        <div className="pie">
+        ¿No tienes cuenta? <a href="#">Crear cuenta</a>
+      </div>   
+      </form>         
+      <footer className="abajo">
+          <div className="container">
+          <span className="clear">© 2024 UBPlibros</span>
+          {/* <span className="right">¡Alquila tu libro en línea y lo enviaremos a tu casa!</span> */}
+          </div>
+        </footer>
     </div>
+    
+    
   );
 };
 

@@ -2,20 +2,21 @@ import { Outlet, Link } from "react-router-dom"
 
 const Layout = () =>{
     return <div>
+        <div className="logo"><Link to="/"><img src="/src/images/w-Logo.png" width="200px" height="88px" alt="AlquilerLibros.Com" /></Link></div>   
         <nav>
             <ul>
                 <li>
-                    <Link to="/">Home</Link>
+                    <Link to="/">Inicio</Link>
                 </li>
                 <li>
-                    <Link to="/about">About</Link>
+                    <Link to="/about">Nosotros</Link>
                 </li>
                 <li>
-                    <Link to="/Login">Login</Link>
+                    <Link to="/Login">Ingresar</Link>
                 </li>
             </ul>
         </nav>
-        <hr />
+        {/* <hr /> */}
         <Outlet />
     </div>;
 }

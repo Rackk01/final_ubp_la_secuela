@@ -1,8 +1,8 @@
-import './css/Home.css';
+import './css/Style.css';
 
 const Home = () => {
     return (
-      <div>
+      <div>             
         <header>
           <div className="top"></div>
   
@@ -18,7 +18,7 @@ const Home = () => {
               <div className="search">
                 <form method="GET" action="#">
                   <input type="text" placeholder="Buscar un libro..." />
-                  <input type="submit" value="" />
+                  <input type="submit" value="Buscar" />
                 </form>
               </div>
             </div>
@@ -27,10 +27,10 @@ const Home = () => {
   
         <section className="padding">
           <div className="container padding">
-            <hr />
+            <hr className='hr' />
   
             <h2 className="padding">Libros Más Alquilados</h2>
-  
+            <iframe width="100%" height="450" src="https://www.youtube.com/embed/0GRryy58bn0?si=7HiSLiIfJFSOoHEY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             <ul className="libros">
               {/* Agregar aquí los elementos de la lista con JSX */}
             </ul>
@@ -40,11 +40,11 @@ const Home = () => {
   
           <div className="info">
             <div className="container">
-              <img src="img/libro.jpg" alt="¿Cómo Funciona?" />
+              {/* <img src="img/libro.jpg" alt="¿Cómo Funciona?" /> */}
   
               <h1>¿Cómo Funciona?</h1>
-              <p>Alquila tu libro en línea y lo enviaremos a tu puerta. Tendrás 15 días para leerlo, luego regresaremos a tu dirección y deberás devolver el libro. ¡Podrás alquilar otro que elijas en nuestro sitio web!</p>
-              <a href="sobre.html" className="button white">SOBRE NOSOTROS</a>
+              <p className='center'>Alquila tu libro en línea y lo enviaremos a tu puerta. Tendrás 15 días para leerlo, luego regresaremos a tu dirección y deberás devolver el libro. ¡Podrás alquilar otro que elijas en nuestro sitio web!</p>
+              <a href="/about" className="button espacio">SOBRE NOSOTROS</a>
             </div>
           </div>
   
@@ -69,8 +69,8 @@ const Home = () => {
   
         <footer>
           <div className="container">
-            <span className="left">© 2015 BiblioEMIA</span>
-            <span className="right">¡Alquila tu libro en línea y lo enviaremos a tu casa!</span>
+            <span className="clear"> &copy; 2024 UBPlibros</span>
+            {/* <span className="right">¡Alquila tu libro en línea y lo enviaremos a tu casa!</span> */}
           </div>
         </footer>
       </div>

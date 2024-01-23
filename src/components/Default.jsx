@@ -1,5 +1,5 @@
 const Default = () =>{
-    return <h1>Error 404: Ruta no encontrada</h1>;
+    return <h1>Ups! error 404, no encontramos los que buscas!</h1>;
 }
 
 export default Default;
