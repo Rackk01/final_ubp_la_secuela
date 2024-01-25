@@ -14,7 +14,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
     margin: 0;
     padding: 0;
-    overflow:-moz-hidden-unscrollable;
+    /*overflow:-moz-hidden-unscrollable;*/
 }
 
 ::-webkit-scrollbar {display: none;}
@@ -103,7 +103,7 @@ label, input, select, textarea {
     margin: 10px 0;
 }
 
-input[type=text],  textarea {
+input[type=text] ,  textarea {
     width: 200px;
     outline: 0 none;
     line-height: 18px;

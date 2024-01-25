@@ -31,7 +31,7 @@ const Login = () => {
         />
         <button type="submit">Iniciar Sesión</button>
         <div className="pie">
-        ¿No tienes cuenta? <a href="#">Crear cuenta</a>
+        ¿No tienes cuenta? <a href="/Registro">Crear cuenta</a>
       </div>   
       </form>         
       <footer className="abajo">
