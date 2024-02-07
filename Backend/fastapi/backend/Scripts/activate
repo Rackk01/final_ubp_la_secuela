@@ -35,7 +35,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\xampp\htdocs\final_ubp\final_ubp_la_secuela-main\Backend\fastapi\backend"
+VIRTUAL_ENV="C:\Final_UBP\final_ubp_la_secuela-main\Backend\fastapi\backend"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
