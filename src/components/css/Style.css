@@ -24,7 +24,7 @@ body {
     display: contents !important;
     color: #141412;
     line-height: 1.5;
-	background-color: white;
+	background-color: #fff !important;
 }
 
 p.justify {
@@ -103,7 +103,43 @@ label, input, select, textarea {
     margin: 10px 0;
 }
 
-input[type=text] ,  textarea {
+/*.textarea {
+    width: 200px;
+    outline: 0 none;
+    line-height: 18px;
+    margin: 5px 0 0;
+    background-color: #FFF;
+    border: 1px solid #E0E0E0;
+    color: #777;
+    font-size: 12px;
+    max-width: 300px;
+    height: 31px;
+    border-radius: 0px;
+    box-sizing: border-box;
+}*/
+
+.search input[type=submit] {
+    float: right;
+    width: 50px;
+    height: 31px;
+    padding: 0;
+    cursor: pointer;    
+    outline: medium none;
+    border: 1px solid #E0E0E0;
+    background-color: #FFF;
+    font-size: 11px;
+    color: #666;
+    font-family: inherit;
+    box-sizing: border-box;
+    box-shadow: none;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 0px;
+}
+
+.search input[type=text] {
+    float: left;
+	/*display:inline;*/
     width: 200px;
     outline: 0 none;
     line-height: 18px;
@@ -118,28 +154,6 @@ input[type=text] ,  textarea {
     height: 31px;
     border-radius: 0px;
     box-sizing: border-box;
-}
-
-.search input[type=submit] {
-    float: right;
-    width: 50px;
-    height: 31px;
-    padding: 0;
-    cursor: pointer;    
-    outline: medium none;
-    border: 1px solid #E0E0E0;
-    font-size: 11px;
-    color: #666;
-    font-family: inherit;
-    box-sizing: border-box;
-    box-shadow: none;
-    margin-top: 5px;
-    padding: 5px;
-    border-radius: 0px;
-}
-
-.search input[type=text] {
-	display:inline;
 }
 
 textarea {
@@ -184,7 +198,7 @@ nav ul li a:hover {
 
 .search {
     float: right;
-    margin: -30px 0;
+    margin: -30px 0;    
 }
 
 .livros li img {
@@ -272,6 +286,10 @@ nav ul li a:hover {
 #contato input[type=text],  input[type=email],textarea {
     width: 100%;
     resize:none;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 footer {

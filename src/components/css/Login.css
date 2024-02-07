@@ -1,21 +1,21 @@
 /* Login.css */
 body{
-    background: rgb(63,94,251);
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(249,70,252,1) 100%); 
+    /*background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(249,70,252,1) 100%); */
   }
   
   .login-container {
       /* display: flex;
       justify-content: center;
-      align-items: center;
-      height: 50vh; */
+      align-items: center;*/
+      height: auto; 
       display: flex;
-      justify-content: center;
+      /*justify-content: center;*/
       align-content: center;
       flex-direction: column;
       flex-wrap: wrap;
       align-items: center;
-      margin-top: 50px;
+      margin-top: 30px;
     }
     
     .login-form {
@@ -73,13 +73,15 @@ body{
     }
 
     footer.abajo {
-      position: fixed;
-      bottom: 0;
+      /*position: absolute;*/
+      position:static;
+      margin-top: 80px;
+      bottom: 0px;
       width: 99%;
       padding: 15px;
-      background-color: #1e1934;
+      /*background-color: #1e1934;*/
       color: white;
       font-size: 14px;
-    height: 25px;
+      /*height: 25px;*/
     }
     
